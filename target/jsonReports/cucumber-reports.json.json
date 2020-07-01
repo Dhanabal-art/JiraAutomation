@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-01T10:58:55.083Z",
+        "line": 12,
+        "name": "Creating issue in Jira",
+        "description": "",
+        "id": "validating-task-creation-in-jira;creating-issue-in-jira;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4152555892,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Session created with \"dhana17111985\" and \"June@2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dhana17111985\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"June@2020\"",
+                  "offset": 41
+                }
+              ],
+              "location": "JiraDefinition.session_created_with_and(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 489036205,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"CreateIssue\" payload is transferred",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CreateIssue\"",
+                  "offset": 0
+                }
+              ],
+              "location": "JiraDefinition.payload_is_transferred(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2788037264,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"HttpCreateIssuePOSTMethos\" is called",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HttpCreateIssuePOSTMethos\"",
+                  "offset": 0
+                }
+              ],
+              "location": "JiraDefinition.is_called(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91548,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Issue is successfully created.",
+            "match": {
+              "location": "JiraDefinition.issue_is_successfully_created()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validating task creation in Jira",
+    "description": "",
+    "id": "validating-task-creation-in-jira",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/jira.feature",
+    "tags": []
+  }
+]

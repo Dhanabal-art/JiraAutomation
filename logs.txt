@@ -1,0 +1,94 @@
+Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "dhana17111985",
+    "password": "June@2020"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 988x583x1
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15627478
+Set-Cookie: atlassian.xsrf.token=BJ3D-7SRS-IJUD-UF6I_2e7613c4b9b994b428aec41156fee731972dfe75_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=A0EEDF11E4E93A1AA4E49A022CEA6872; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 01 Jul 2020 10:58:58 GMT
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "A0EEDF11E4E93A1AA4E49A022CEA6872"
+    },
+    "loginInfo": {
+        "failedLoginCount": 1,
+        "loginCount": 58,
+        "lastFailedLoginTime": "2020-06-21T17:35:03.353+0530",
+        "previousLoginTime": "2020-07-01T16:27:35.358+0530"
+    }
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=JSESSIONID=A0EEDF11E4E93A1AA4E49A022CEA6872
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "JP"
+        },
+        "issuetype": {
+            "name": "Bug"
+        },
+        "summary": "Creating bug from deserialization",
+        "description": "Creting description for DeSerailization"
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 988x584x1
+X-ASESSIONID: z0c3jx
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15627478
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BJ3D-7SRS-IJUD-UF6I_a8bc981d2187e559f4e7f073cad313d379d3851d_lin; Path=/
+X-AUSERNAME: dhana17111985
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 01 Jul 2020 10:59:01 GMT
+
+{
+    "id": "10109",
+    "key": "JP-10",
+    "self": "http://localhost:8080/rest/api/2/issue/10109"
+}
